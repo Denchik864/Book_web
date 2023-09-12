@@ -1,0 +1,17 @@
+{% extends "firstapp/base.html" %}
+{% block title %}AZone Studio VRN{% endblock title%}
+{% block header %}Это главная страница - index.html{% endblock header %}
+{% block content %}
+    <div class="container-fluid my-2">
+        <div class="row">
+            <div class="col text-center">
+                <div>{{ my_text }}</div>
+                {% if people_kol > 0%}
+                <h5>
+                    количество введенных пользователей - {{ people_kol}}
+                </h5>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
